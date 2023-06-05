@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <style>
+        div {
+            background-color: #bca;
+            width: 100px;
+            border: 1px solid green;
+        }
+    </style>
+
+
+    <title>JQuery 11</title>
+</head>
+
+<body>
+    <button id="go">Apliar</button>
+    <div id="block">Meu pau</div>
+
+    <script>
+        //Usando vários tipos de unidades de uma animação
+        $("#go").click(function () {
+            $("#block").animate({
+                width: "70%",
+                opacity: 0.4,
+                marginLeft: "0.6in",
+                fontSize: "3em",
+                borderWidth: "10px"
+            }, 1500);
+        });
+    </script>
+
+</body>
+
+</html>
